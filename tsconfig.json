@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["ES2017", "DOM"],
+    "strict": true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "newLine": "lf",
+    "outDir": "./dist-ts-tmp"
+  },
+  "include": ["src/main.ts"]
+}

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sanaulla Haq — Software Engineer</title>
+<meta name="description" content="Sanaulla Haq — Backend / Full Stack Software Engineer specializing in Python, Frappe, ERPNext, FastAPI and Django. Based in Dhaka, Bangladesh. Open to remote, full-time roles." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a href="#top" class="nav-mark">sanaulla<span class="dot">.</span>haq</a>
+    <nav class="routes" aria-label="Section navigation">
+      <a href="#about"><span class="method">GET</span>/about</a>
+      <a href="#experience"><span class="method">GET</span>/experience</a>
+      <a href="#projects"><span class="method">GET</span>/projects</a>
+      <a href="#skills"><span class="method">GET</span>/skills</a>
+      <a href="#contact"><span class="method">POST</span>/contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero wrap" style="padding-top: 76px; border-top: none;">
+    <div class="hero-status"><span class="pulse"></span> Open to remote, full-time roles</div>
+
+    <h1 class="hero-title">Building backend systems that <em>hold up</em> in production.</h1>
+
+    <p class="hero-lede">
+      I'm Sanaulla Haq, a Software Engineer in Dhaka, Bangladesh with four years of
+      experience shipping enterprise backends in Python — from a government project-appraisal
+      platform used by dozens of ministries, to a hire-purchase system running across
+      500+ branches.
+    </p>
+
+    <div class="hero-cli" aria-hidden="true">
+      <div><span class="comment">// whoami</span></div>
+      <div><span class="prompt">$</span> role --current</div>
+      <div>&nbsp;&nbsp;Software Engineer @ Neurosoft Technologies Ltd.</div>
+      <div><span class="prompt">$</span> stack --primary</div>
+      <div>&nbsp;&nbsp;Python · Frappe · ERPNext · FastAPI · Django · PostgreSQL</div>
+    </div>
+
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#projects">View projects</a>
+      <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      <a class="btn btn-ghost" href="./Sanaulla_Haq_CV.pdf" download>Download CV</a>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">about</div>
+        <h2 class="section-title">A bit about my work</h2>
+      </div>
+      <div class="section-index">GET /about → 200 OK</div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          I'm a <strong>Full Stack Software Engineer</strong> who spends most of my time on
+          the backend — designing data models, building REST APIs, and wiring systems
+          together so they stay reliable once real people depend on them.
+        </p>
+        <p>
+          Over the past four years at <strong>Neurosoft Technologies Ltd.</strong>, I've built
+          and shipped a <strong>government project appraisal platform</strong> for the Planning
+          Ministry, a <strong>VAT management system</strong> handling regulatory calculations, and
+          a <strong>hire-purchase management system</strong> deployed across 500+ branches with
+          live ERP and national ID verification integrations.
+        </p>
+        <p>
+          Lately I've been going deep on modern async Python — SQLAlchemy with asyncpg,
+          JWT auth backed by Redis, and Celery task queues — while staying close to the
+          Frappe/ERPNext ecosystem that most of my production experience is built on.
+        </p>
+      </div>
+
+      <div class="fact-table reveal">
+        <div class="fact-row"><div class="fact-key">location</div><div class="fact-val">Dhaka, BD</div></div>
+        <div class="fact-row"><div class="fact-key">role</div><div class="fact-val">Software Engineer</div></div>
+        <div class="fact-row"><div class="fact-key">experience</div><div class="fact-val">4+ years</div></div>
+        <div class="fact-row"><div class="fact-key">education</div><div class="fact-val">B.Sc. CSE, North South University</div></div>
+        <div class="fact-row"><div class="fact-key">focus</div><div class="fact-val">Backend / API systems</div></div>
+        <div class="fact-row"><div class="fact-key">status</div><div class="fact-val">Open — remote, full-time</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience" class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">experience</div>
+        <h2 class="section-title">Where I've worked</h2>
+      </div>
+      <div class="section-index">GET /experience → 200 OK</div>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-date">Jan 2026 —<br/>May 2026</div>
+        <div class="timeline-role">
+          <h3>Institutional ERP System</h3>
+          <div class="timeline-org">Rahima-Fazal Model School, Gazipur · Neurosoft Technologies Ltd.</div>
+          <ul>
+            <li>Deployed a centralized, education-focused ERP on ERPNext v15 to manage admissions, academics, and student financials.</li>
+            <li>Automated scheduling, grading, and attendance tracking to cut manual data entry.</li>
+            <li>Built custom Jinja2 templates for transcripts, financial receipts, and attendance reports.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-date">Dec 2025 —<br/>Jan 2026</div>
+        <div class="timeline-role">
+          <h3>AEB Social <span style="color: var(--ink-faint); font-weight: 400;">— Mobile App</span></h3>
+          <div class="timeline-org">Neurosoft Technologies Ltd.</div>
+          <ul>
+            <li>Integrated the Meta Graph API for automated posting (feed, photos, videos) as part of a social automation platform.</li>
+            <li>Integrated the Telegram Bot API for bulk messaging, with logging for operation success/failure.</li>
+            <li>Managed authentication, tokens, and user credential handling.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-date">Aug 2024 —<br/>Nov 2025</div>
+        <div class="timeline-role">
+          <h3>HPM <span style="color: var(--ink-faint); font-weight: 400;">— Hire Purchase Management</span></h3>
+          <div class="timeline-org">Singer Bangladesh Limited · Neurosoft Technologies Ltd.</div>
+          <ul>
+            <li>Designed and built a scalable Hire Purchase Management system deployed across 500+ branches.</li>
+            <li>Digitized customer and guarantor workflows, replacing manual paperwork.</li>
+            <li>Integrated with the Singer Information System (ERP) and National NID verification for identity checks.</li>
+            <li>Added real-time data capture, GPS tracking, and audit logging for field operations, plus dashboards for branch and head-office reporting.</li>
+            <li>Ran onsite and online training across 3 batches of ~80 participants each, and built a companion Android app for field inspection.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-date">Jan 2023 —<br/>May 2026</div>
+        <div class="timeline-role">
+          <h3>Accuvat <span style="color: var(--ink-faint); font-weight: 400;">— VAT Management System</span></h3>
+          <div class="timeline-org">Neurosoft Technologies Ltd.</div>
+          <ul>
+            <li>Engineered backend modules for Purchase, Sales, Returns, Adjustments, Deposits, and VDS workflows with accurate VAT calculation.</li>
+            <li>Implemented business logic for VAT calculation and regulatory compliance, plus reporting and document generation for financial operations.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-date">Jun 2022 —<br/>Feb 2024</div>
+        <div class="timeline-role">
+          <h3>PAMS <span style="color: var(--ink-faint); font-weight: 400;">— Project Appraisal Management System</span></h3>
+          <div class="timeline-org">JICA / Planning Ministry (SPIMS Project) · Neurosoft Technologies Ltd.</div>
+          <ul>
+            <li>Built backend modules for DPP, MAF, and SAF, digitizing government project appraisal end to end.</li>
+            <li>Built and maintained REST APIs for bidirectional data exchange with an external system (PPS), plus dynamic document generation and print formats.</li>
+            <li>Delivered training to government officials across 6 batches (~35 participants each) — reaching 98% of ministries/divisions for MAF and 50% of the Planning Commission's Sector Division for SAF.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">projects</div>
+        <h2 class="section-title">Selected systems I've built</h2>
+      </div>
+      <div class="section-index">GET /projects → 200 OK</div>
+    </div>
+
+    <div class="project-list">
+
+      <div class="project-card reveal">
+        <div class="project-row1">
+          <div class="project-name">PAMS — Project Appraisal Management System</div>
+          <div class="project-meta">government · 2022–2024</div>
+        </div>
+        <p class="project-desc">
+          Digitized the Planning Ministry's project appraisal process end to end, with
+          bidirectional REST API integration to an external government system and
+          dynamic document generation for official formats.
+        </p>
+        <div class="project-stack">
+          <span>Python</span><span>Frappe</span><span>MariaDB</span><span>REST API</span><span>Jinja2</span><span>wkhtmltopdf</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-row1">
+          <div class="project-name">Accuvat — VAT Management System</div>
+          <div class="project-meta">fintech / compliance · 2023–ongoing</div>
+        </div>
+        <p class="project-desc">
+          Backend for Purchase, Sales, Returns, Adjustments, Deposits, and VDS workflows,
+          implementing accurate VAT calculation logic under regulatory constraints.
+        </p>
+        <div class="project-stack">
+          <span>Python</span><span>Frappe</span><span>MariaDB</span><span>REST API</span><span>JavaScript</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-row1">
+          <div class="project-name">HPM — Hire Purchase Management</div>
+          <div class="project-meta">deployed to 500+ branches · 2024–2025</div>
+        </div>
+        <p class="project-desc">
+          Scalable hire-purchase platform for Singer Bangladesh with live ERP and
+          National NID verification integration, GPS-tracked field operations, and
+          a companion Android inspection app.
+        </p>
+        <div class="project-stack">
+          <span>Python</span><span>Frappe</span><span>MariaDB</span><span>REST API</span><span>Android</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-row1">
+          <div class="project-name">AEB Social — automation platform</div>
+          <div class="project-meta">mobile · 2025–2026</div>
+        </div>
+        <p class="project-desc">
+          React Native app automating social posting via the Meta Graph API and bulk
+          messaging via the Telegram Bot API, with credential management and operation logging.
+        </p>
+        <div class="project-stack">
+          <span>React Native</span><span>TypeScript</span><span>Meta Graph API</span><span>Telegram API</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-row1">
+          <div class="project-name">fastapi-beyond-crud</div>
+          <div class="project-meta">personal · ongoing</div>
+        </div>
+        <p class="project-desc">
+          A deep-dive FastAPI project: async SQLAlchemy/asyncpg, Pydantic v2, JWT auth
+          with a Redis-backed token blocklist, and Celery task queues bridged with asgiref.
+        </p>
+        <div class="project-stack">
+          <span>FastAPI</span><span>PostgreSQL</span><span>Redis</span><span>Celery</span><span>Pydantic v2</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">skills</div>
+        <h2 class="section-title">Tools I work with</h2>
+      </div>
+      <div class="section-index">GET /skills → 200 OK</div>
+    </div>
+
+    <div class="skills-groups">
+      <div class="reveal">
+        <p class="skill-group-label">languages</p>
+        <div class="tag-list">
+          <span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">TypeScript</span>
+          <span class="tag">Java</span><span class="tag">C</span><span class="tag">C++</span><span class="tag">Dart</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="skill-group-label">frameworks</p>
+        <div class="tag-list">
+          <span class="tag">Frappe</span><span class="tag">ERPNext</span><span class="tag">Django</span>
+          <span class="tag">FastAPI</span><span class="tag">DRF</span><span class="tag">Vue.js</span><span class="tag">React Native</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="skill-group-label">data &amp; infra</p>
+        <div class="tag-list">
+          <span class="tag">PostgreSQL</span><span class="tag">MariaDB</span><span class="tag">MySQL</span>
+          <span class="tag">SQLite</span><span class="tag">Redis</span><span class="tag">Firebase</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="skill-group-label">practices</p>
+        <div class="tag-list">
+          <span class="tag">REST APIs</span><span class="tag">System Integration</span><span class="tag">Database Design</span>
+          <span class="tag">Git</span><span class="tag">Linux</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">contact</div>
+        <h2 class="section-title">Let's work together</h2>
+      </div>
+      <div class="section-index">POST /contact → 202 Accepted</div>
+    </div>
+
+    <p style="color: var(--ink-soft); max-width: 56ch; margin: 0 0 28px;">
+      I'm currently open to remote, full-time roles, and taking on select freelance
+      work. The fastest way to reach me is email — I usually reply within a day.
+    </p>
+
+    <div class="contact-grid">
+      <a class="contact-link reveal" href="mailto:sanaullahaq01@gmail.com">
+        <span><span class="contact-label">email</span><span class="contact-value">sanaullahaq01@gmail.com</span></span>
+        <span class="contact-arrow">↗</span>
+      </a>
+      <a class="contact-link reveal" href="tel:+8801602281315">
+        <span><span class="contact-label">phone</span><span class="contact-value">+880 1602 281315</span></span>
+        <span class="contact-arrow">↗</span>
+      </a>
+      <a class="contact-link reveal" href="https://www.linkedin.com/in/sanaulla-haq-325a6a174/" target="_blank" rel="noopener">
+        <span><span class="contact-label">linkedin</span><span class="contact-value">sanaulla-haq</span></span>
+        <span class="contact-arrow">↗</span>
+      </a>
+      <a class="contact-link reveal" href="https://github.com/sanaullahaq" target="_blank" rel="noopener">
+        <span><span class="contact-label">github</span><span class="contact-value">@sanaullahaq</span></span>
+        <span class="contact-arrow">↗</span>
+      </a>
+      <a class="contact-link reveal" href="https://www.upwork.com/freelancers/~01fa7f0400df42988b" target="_blank" rel="noopener">
+        <span><span class="contact-label">upwork</span><span class="contact-value">View profile</span></span>
+        <span class="contact-arrow">↗</span>
+      </a>
+      <a class="contact-link reveal" href="https://scholar.google.com/citations?hl=en&authuser=1&user=yadwf_MAAAAJ" target="_blank" rel="noopener">
+        <span><span class="contact-label">google scholar</span><span class="contact-value">View publications</span></span>
+        <span class="contact-arrow">↗</span>
+      </a>
+      <a class="contact-link reveal" href="https://x.com/sanaullahaq01" target="_blank" rel="noopener">
+        <span><span class="contact-label">x</span><span class="contact-value">@sanaullahaq01</span></span>
+        <span class="contact-arrow">↗</span>
+      </a>
+      <a class="contact-link reveal" href="https://www.facebook.com/sanstana01" target="_blank" rel="noopener">
+        <span><span class="contact-label">facebook</span><span class="contact-value">sanstana01</span></span>
+        <span class="contact-arrow">↗</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span class="footer-status"><span class="dot"></span> Available — Dhaka, BD (UTC+6)</span>
+    <span>© <span id="year"></span> Sanaulla Haq</span>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="Back to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
