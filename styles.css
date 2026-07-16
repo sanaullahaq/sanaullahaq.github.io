@@ -161,14 +161,39 @@ nav.routes a:hover {
 
 .hero-photo {
   flex-shrink: 0;
+  text-align: center;
 }
 
 .hero-photo img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center 10%;
   border: 2px solid var(--rule);
+}
+
+.hero-photo-caption {
+  margin-top: 14px;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+.hero-photo-caption strong {
+  display: block;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.hero-photo-caption span {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink-faint);
+  margin-top: 5px;
 }
 
 .hero-status {
