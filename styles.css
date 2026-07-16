@@ -148,8 +148,27 @@ nav.routes a:hover {
    Hero
    =========================================================== */
 .hero {
+  display: flex;
+  gap: 48px;
+  align-items: center;
   padding: 76px 0 64px;
   border-bottom: 1px solid var(--rule);
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-photo {
+  flex-shrink: 0;
+}
+
+.hero-photo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--rule);
 }
 
 .hero-status {
@@ -631,6 +650,11 @@ footer.site-footer {
    Responsive
    =========================================================== */
 @media (max-width: 760px) {
+  .hero { flex-direction: column; text-align: center; }
+  .hero-content { max-width: 100%; }
+  .hero-photo { order: -1; }
+  .hero-photo img { width: 160px; height: 160px; }
+  .hero-actions { justify-content: center; }
   .about-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .timeline-item { grid-template-columns: 1fr; gap: 6px; }

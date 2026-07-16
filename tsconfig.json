@@ -6,6 +6,7 @@
     "noImplicitAny": true,
     "removeComments": true,
     "newLine": "lf",
+    "rootDir": "./src",
     "outDir": "./dist-ts-tmp"
   },
   "include": ["src/main.ts"]
