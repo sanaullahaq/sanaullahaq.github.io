@@ -78,6 +78,7 @@
       </div>
 
       <div class="hero-actions">
+        <a class="btn btn-primary" href="#experience">View experience</a>
         <a class="btn btn-primary" href="#projects">View projects</a>
         <a class="btn btn-ghost" href="#contact">Get in touch</a>
         <a class="btn btn-ghost" href="./Sanaulla_Haq_CV.pdf" download>Download CV</a>
@@ -145,104 +146,97 @@
       <div class="section-index">GET /experience → 200 OK</div>
     </div>
 
-    <div class="experiences">
-      <div class="company-block reveal">
-        <div class="company-header">
-          <div class="company-duration">Jun 2022 —<br/>Present</div>
-          <div>
-            <div class="company-title-row">
-              <a class="company-name" href="https://neurosoft-bd.com" target="_blank" rel="noopener">Neurosoft Technologies Ltd. <span class="external-arrow">↗</span></a>
-              <img class="company-logo" src="neurosoft_logo.png" alt="Neurosoft logo" />
-            </div>
-            <div class="company-role">Software Engineer | on-site | full-time</div>
-          </div>
+    <div class="exp-context">
+      <img class="exp-context-logo" src="neurosoft_logo.png" alt="Neurosoft logo" />
+      <div>
+        <a class="exp-context-company" href="https://neurosoft-bd.com" target="_blank" rel="noopener">Neurosoft Technologies Ltd. <span class="external-arrow">↗</span></a>
+        <div class="exp-context-role">Software Engineer · Jun 2022 – Present</div>
+      </div>
+    </div>
+
+    <div class="exp-cards">
+
+      <div class="exp-card reveal">
+        <div class="exp-card-header">
+          <div class="exp-card-title">Institutional ERP System</div>
+          <div class="exp-card-date">Jan 2026 — May 2026</div>
         </div>
-
-        <div class="project-group">
-
-          <div class="exp-item">
-            <div></div>
-            <div class="exp-content">
-              <div class="exp-title-row">
-                <div class="exp-title">Institutional ERP System</div>
-                <div class="exp-date">Jan 2026 — May 2026</div>
-              </div>
-              <div class="exp-client">Rahima-Fazal Model School, Gazipur</div>
-              <ul>
-                <li>Deployed a centralized, education-focused ERP on ERPNext v15 to manage admissions, academics, and student finances.</li>
-                <li>Automated scheduling, grading, and attendance tracking to cut manual data entry.</li>
-                <li>Built custom Jinja2 templates for transcripts, financial receipts, and attendance reports.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="exp-item">
-            <div></div>
-            <div class="exp-content">
-              <div class="exp-title-row">
-                <div class="exp-title">AEB Social <span class="exp-subtitle">— Mobile App</span></div>
-                <div class="exp-date">Dec 2025 — Jan 2026</div>
-              </div>
-              <div class="exp-client">Neurosoft Technologies Ltd.</div>
-              <ul>
-                <li>Integrated the Meta Graph API for automated posting (feed, photos, videos) as part of a social automation platform.</li>
-                <li>Integrated the Telegram Bot API for bulk messaging, with logging for operation success/failure.</li>
-                <li>Managed authentication, tokens, and user credential handling.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="exp-item">
-            <div></div>
-            <div class="exp-content">
-              <div class="exp-title-row">
-                <div class="exp-title">HPM <span class="exp-subtitle">— Hire Purchase Management</span></div>
-                <div class="exp-date">Aug 2024 — Nov 2025</div>
-              </div>
-              <div class="exp-client">Singer Bangladesh Limited</div>
-              <ul>
-                <li>Designed and built a scalable Hire Purchase Management system deployed across 500+ branches.</li>
-                <li>Digitized customer and guarantor workflows, replacing manual paperwork.</li>
-                <li>Integrated with the Singer Information System (ERP) and National NID verification for identity checks.</li>
-                <li>Added real-time data capture, GPS tracking, and audit logging for field operations, plus dashboards for branch and head-office reporting.</li>
-                <li>Ran onsite and online training across 3 batches of ~80 participants each, and built a companion Android app for field inspection.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="exp-item">
-            <div></div>
-            <div class="exp-content">
-              <div class="exp-title-row">
-                <div class="exp-title">Accuvat <span class="exp-subtitle">— VAT Management System</span></div>
-                <div class="exp-date">Jan 2023 — May 2026</div>
-              </div>
-              <div class="exp-client">Neurosoft Technologies Ltd.</div>
-              <ul>
-                <li>Engineered backend modules for Purchase, Sales, Returns, Adjustments, Deposits, and VDS workflows with accurate VAT calculation.</li>
-                <li>Implemented business logic for VAT calculation and regulatory compliance, plus reporting and document generation for financial operations.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="exp-item">
-            <div></div>
-            <div class="exp-content">
-              <div class="exp-title-row">
-                <div class="exp-title">PAMS <span class="exp-subtitle">— Project Appraisal Management System</span></div>
-                <div class="exp-date">Jun 2022 — Feb 2024</div>
-              </div>
-              <div class="exp-client">JICA / Planning Ministry (SPIMS Project)</div>
-              <ul>
-                <li>Built backend modules for DPP, MAF, and SAF, digitizing government project appraisal end to end.</li>
-                <li>Built and maintained REST APIs for bidirectional data exchange with an external system (PPS), plus dynamic document generation and print formats.</li>
-                <li>Delivered training to government officials across 6 batches (~35 participants each) — reaching 98% of ministries/divisions for MAF and 50% of the Planning Commission's Sector Division for SAF.</li>
-              </ul>
-            </div>
-          </div>
-
+        <div class="exp-card-client">Rahima-Fazal Model School, Gazipur · Neurosoft Technologies Ltd.</div>
+        <ul>
+          <li>Deployed a centralized, education-focused ERP on ERPNext v15 to manage admissions, academics, and student finances.</li>
+          <li>Automated scheduling, grading, and attendance tracking to cut manual data entry.</li>
+          <li>Built custom Jinja2 templates for transcripts, financial receipts, and attendance reports.</li>
+        </ul>
+        <div class="exp-card-stack">
+          <span>Python</span><span>Frappe</span><span>ERPNext</span><span>Jinja2</span><span>MariaDB</span><span>JavaScript</span>
         </div>
       </div>
+
+      <div class="exp-card reveal">
+        <div class="exp-card-header">
+          <div class="exp-card-title">AEB Social <span class="exp-card-sub">— Mobile App</span></div>
+          <div class="exp-card-date">Dec 2025 — Jan 2026</div>
+        </div>
+        <div class="exp-card-client">Neurosoft Technologies Ltd.</div>
+        <ul>
+          <li>Integrated the Meta Graph API for automated posting (feed, photos, videos) as part of a social automation platform.</li>
+          <li>Integrated the Telegram Bot API for bulk messaging, with logging for operation success/failure.</li>
+          <li>Managed authentication, tokens, and user credential handling.</li>
+        </ul>
+        <div class="exp-card-stack">
+          <span>React Native</span><span>TypeScript</span><span>Meta Graph API</span><span>Telegram API</span>
+        </div>
+      </div>
+
+      <div class="exp-card reveal">
+        <div class="exp-card-header">
+          <div class="exp-card-title">HPM <span class="exp-card-sub">— Hire Purchase Management</span></div>
+          <div class="exp-card-date">Aug 2024 — Nov 2025</div>
+        </div>
+        <div class="exp-card-client">Singer Bangladesh Limited · Neurosoft Technologies Ltd.</div>
+        <ul>
+          <li>Designed and built a scalable Hire Purchase Management system deployed across 500+ branches.</li>
+          <li>Digitized customer and guarantor workflows, replacing manual paperwork.</li>
+          <li>Integrated with the Singer Information System (ERP) and National NID verification for identity checks.</li>
+          <li>Added real-time data capture, GPS tracking, and audit logging for field operations, plus dashboards for branch and head-office reporting.</li>
+          <li>Ran onsite and online training across 3 batches of ~80 participants each, and built a companion Android app for field inspection.</li>
+        </ul>
+        <div class="exp-card-stack">
+          <span>Python</span><span>Frappe</span><span>MariaDB</span><span>REST API</span><span>JavaScript</span><span>Android</span>
+        </div>
+      </div>
+
+      <div class="exp-card reveal">
+        <div class="exp-card-header">
+          <div class="exp-card-title">Accuvat <span class="exp-card-sub">— VAT Management System</span></div>
+          <div class="exp-card-date">Jan 2023 — May 2026</div>
+        </div>
+        <div class="exp-card-client">Neurosoft Technologies Ltd.</div>
+        <ul>
+          <li>Engineered backend modules for Purchase, Sales, Returns, Adjustments, Deposits, and VDS workflows with accurate VAT calculation.</li>
+          <li>Implemented business logic for VAT calculation and regulatory compliance, plus reporting and document generation for financial operations.</li>
+        </ul>
+        <div class="exp-card-stack">
+          <span>Python</span><span>Frappe</span><span>MariaDB</span><span>JavaScript</span>
+        </div>
+      </div>
+
+      <div class="exp-card reveal">
+        <div class="exp-card-header">
+          <div class="exp-card-title">PAMS <span class="exp-card-sub">— Project Appraisal Management System</span></div>
+          <div class="exp-card-date">Jun 2022 — Feb 2024</div>
+        </div>
+        <div class="exp-card-client">JICA / Planning Ministry (SPIMS Project) · Neurosoft Technologies Ltd.</div>
+        <ul>
+          <li>Built backend modules for DPP, MAF, and SAF, digitizing government project appraisal end to end.</li>
+          <li>Built and maintained REST APIs for bidirectional data exchange with an external system (PPS), plus dynamic document generation and print formats.</li>
+          <li>Delivered training to government officials across 6 batches (~35 participants each) — reaching 98% of ministries/divisions for MAF and 50% of the Planning Commission's Sector Division for SAF.</li>
+        </ul>
+        <div class="exp-card-stack">
+          <span>Python</span><span>Frappe</span><span>MariaDB</span><span>REST API</span><span>Jinja2</span><span>wkhtmltopdf</span><span>JS</span>
+        </div>
+      </div>
+
     </div>
   </section>
 

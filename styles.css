@@ -410,6 +410,7 @@ h2.section-title {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 28px;
+  margin-bottom: 32px;
 }
 
 .skill-group-label {
@@ -436,138 +437,127 @@ h2.section-title {
 }
 
 /* ===========================================================
-   Experience — company grouped
+   Experience — card grid
    =========================================================== */
-.experiences {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.company-block {
-  border: 1px solid var(--rule);
-  border-radius: var(--radius);
-  padding: 28px;
-  background: var(--surface-2);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-}
-
-.company-header {
-  display: grid;
-  grid-template-columns: 140px 1fr;
-  gap: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid var(--rule);
-  margin-bottom: 24px;
-}
-
-.company-duration {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  color: var(--ink-faint);
-  padding-top: 4px;
-}
-
-.company-title-row {
+.exp-context {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--rule);
 }
 
-.company-name {
+.exp-context-logo {
+  height: 32px;
+  width: auto;
+}
+
+.exp-context-company {
   font-family: var(--font-display);
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color: var(--ink);
   text-decoration: none;
   transition: color 0.15s ease;
 }
 
-.company-name:hover {
+.exp-context-company:hover {
   color: var(--accent);
 }
 
-.external-arrow {
-  font-size: 0.9rem;
-}
-
-.company-logo {
-  height: 28px;
-  width: auto;
-  opacity: 0.8;
-}
-
-.company-role {
+.exp-context-role {
   font-family: var(--font-mono);
-  font-size: 12.5px;
+  font-size: 12px;
   color: var(--ink-soft);
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
-.project-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.exp-item {
+.exp-cards {
   display: grid;
-  grid-template-columns: 140px 1fr;
-  gap: 24px;
-  padding: 20px 0;
-  /* border-top: 1px solid var(--rule); */
-}
-
-.exp-item:first-child {
-  border-top: none;
-  padding-top: 0;
-}
-
-.exp-title-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  grid-template-columns: 1fr 1fr;
   gap: 16px;
-  margin-bottom: 2px;
+  margin-bottom: 40px;
 }
 
-.exp-date {
-  font-family: var(--font-mono);
-  font-size: 11.5px;
-  color: var(--ink-faint);
-  white-space: nowrap;
+.exp-card {
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  padding: 20px 22px;
+  transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.exp-title {
+.exp-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.exp-card-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+}
+
+.exp-card-title {
   font-family: var(--font-display);
-  font-size: 1.05rem;
   font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.3;
 }
 
-.exp-subtitle {
+.exp-card-sub {
   color: var(--ink-faint);
   font-weight: 400;
 }
 
-.exp-client {
+.exp-card-date {
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 11px;
+  color: var(--ink-faint);
+  white-space: nowrap;
+}
+
+.exp-card-client {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
   color: var(--accent);
   margin-bottom: 10px;
 }
 
-.exp-content ul {
-  margin: 0;
-  padding-left: 18px;
+.exp-card ul {
+  margin: 0 0 12px;
+  padding-left: 16px;
   color: var(--ink-soft);
+  font-size: 0.88rem;
 }
 
-.exp-content li {
-  margin-bottom: 6px;
-  font-size: 0.96rem;
+.exp-card li {
+  margin-bottom: 4px;
 }
 
-.exp-content li::marker {
+.exp-card li::marker {
   color: var(--ink-faint);
+}
+
+.exp-card-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.exp-card-stack span {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--ink-soft);
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  padding: 2px 7px;
+  border-radius: 100px;
 }
 
 /* ===========================================================
@@ -590,7 +580,7 @@ h2.section-title {
 }
 
 .project-grid:last-child {
-  margin-bottom: 0;
+  margin-bottom: 40px;
 }
 
 .pcard {
@@ -685,6 +675,7 @@ h2.section-title {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 12px;
+  margin-bottom: 40px;
 }
 
 .contact-link {
@@ -817,8 +808,7 @@ footer.site-footer {
   .hero-actions { justify-content: center; }
   .about-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
-  .company-header { grid-template-columns: 1fr; gap: 8px; }
-  .exp-item { grid-template-columns: 1fr; gap: 6px; }
+  .exp-cards { grid-template-columns: 1fr; }
   .project-grid { grid-template-columns: 1fr; }
   nav.routes { display: none; }
   .nav-inner { justify-content: center; }
