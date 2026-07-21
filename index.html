@@ -44,11 +44,11 @@
   <div class="nav-inner">
     <a href="#top" class="nav-mark">sanaulla<span class="dot">.</span>haq</a>
     <nav class="routes" aria-label="Section navigation">
-      <a href="#about"><span class="method">GET</span>/about</a>
-      <a href="#experience"><span class="method">GET</span>/experience</a>
-      <a href="#projects"><span class="method">GET</span>/projects</a>
-      <a href="#skills"><span class="method">GET</span>/skills</a>
-      <a href="#contact"><span class="method">POST</span>/contact</a>
+      <a href="#about">/about</a>
+      <a href="#experience">/experience</a>
+      <a href="#projects">/projects</a>
+      <a href="#skills">/skills</a>
+      <a href="#contact">/contact</a>
     </nav>
   </div>
 </header>
@@ -251,81 +251,162 @@
     <div class="section-head">
       <div>
         <div class="eyebrow">projects</div>
-        <h2 class="section-title">Selected systems I've built</h2>
+        <h2 class="section-title">Academic &amp; side projects</h2>
       </div>
       <div class="section-index">GET /projects → 200 OK</div>
     </div>
 
-    <div class="project-list">
+    <div class="project-section-label">Academic Projects</div>
+    <div class="project-grid">
 
-      <div class="project-card reveal">
-        <div class="project-row1">
-          <div class="project-name">PAMS — Project Appraisal Management System</div>
-          <div class="project-meta">government · 2022–2024</div>
+      <div class="pcard reveal">
+        <div class="pcard-header">
+          <div class="pcard-name">IoT Based Air Pollution Monitoring &amp; Prediction System</div>
+          <a class="pcard-link" href="https://github.com/sanaullahaq/IoT_Based_Air_Pollution_Monitoring_and_Prediction_System" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
-        <p class="project-desc">
-          Digitized the Planning Ministry's project appraisal process end to end, with
-          bidirectional REST API integration to an external government system and
-          dynamic document generation for official formats.
-        </p>
-        <div class="project-stack">
-          <span>Python</span><span>Frappe</span><span>MariaDB</span><span>REST API</span><span>Jinja2</span><span>wkhtmltopdf</span>
+        <p class="pcard-desc">End-to-end IoT system for real-time air quality monitoring and ARIMA-based pollutant forecasting. Arduino sensor node + ThingSpeak cloud + Python prediction engine.</p>
+        <a class="pcard-pub" href="https://ieeexplore.ieee.org/document/9775871" target="_blank" rel="noopener">📄 IEEE Xplore</a>
+        <div class="pcard-stack">
+          <span>Arduino</span><span>Python</span><span>ARIMA</span><span>IoT</span><span>ThingSpeak</span>
         </div>
       </div>
 
-      <div class="project-card reveal">
-        <div class="project-row1">
-          <div class="project-name">Accuvat — VAT Management System</div>
-          <div class="project-meta">fintech / compliance · 2023–ongoing</div>
+      <div class="pcard reveal">
+        <div class="pcard-header">
+          <div class="pcard-name">My Reading Room</div>
+          <a class="pcard-link" href="https://github.com/sanaullahaq/My-Reading-Room" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
-        <p class="project-desc">
-          Backend for Purchase, Sales, Returns, Adjustments, Deposits, and VDS workflows,
-          implementing accurate VAT calculation logic under regulatory constraints.
-        </p>
-        <div class="project-stack">
-          <span>Python</span><span>Frappe</span><span>MariaDB</span><span>REST API</span><span>JavaScript</span>
+        <p class="pcard-desc">Online education monitoring system with face recognition-based student tracking. Teachers create virtual classrooms, upload PDFs, and monitor reading activity via webcam.</p>
+        <div class="pcard-stack">
+          <span>Django</span><span>DRF</span><span>dlib</span><span>OpenCV</span><span>Android</span><span>PostgreSQL</span>
         </div>
       </div>
 
-      <div class="project-card reveal">
-        <div class="project-row1">
-          <div class="project-name">HPM — Hire Purchase Management</div>
-          <div class="project-meta">deployed to 500+ branches · 2024–2025</div>
+      <div class="pcard reveal">
+        <div class="pcard-header">
+          <div class="pcard-name">Age Estimation using AgeDB</div>
+          <a class="pcard-link" href="https://github.com/sanaullahaq/Age-Estimation-using-AgeDB" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
-        <p class="project-desc">
-          Scalable hire-purchase platform for Singer Bangladesh with live ERP and
-          National NID verification integration, GPS-tracked field operations, and
-          a companion Android inspection app.
-        </p>
-        <div class="project-stack">
-          <span>Python</span><span>Frappe</span><span>MariaDB</span><span>REST API</span><span>Android</span>
+        <p class="pcard-desc">Comparative study of CORAL loss vs Cross-Entropy loss for facial age estimation on the AgeDB dataset using ResNet34. Ordinal regression vs standard classification.</p>
+        <a class="pcard-pub" href="https://github.com/sanaullahaq/Age-Estimation-using-AgeDB/blob/main/Comparing_CORAL_Loss_with_Cross_Entropy_Loss_for_Age_Estimation_on_AgeDB.pdf" target="_blank" rel="noopener">📄 Course Paper (PDF)</a>
+        <div class="pcard-stack">
+          <span>PyTorch</span><span>ResNet34</span><span>OpenCV</span><span>Jupyter</span>
         </div>
       </div>
 
-      <div class="project-card reveal">
-        <div class="project-row1">
-          <div class="project-name">AEB Social — automation platform</div>
-          <div class="project-meta">mobile · 2025–2026</div>
+      <div class="pcard reveal">
+        <div class="pcard-header">
+          <div class="pcard-name">DefactoLaw</div>
+          <a class="pcard-link" href="https://github.com/sanaullahaq/defactolaw" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
-        <p class="project-desc">
-          React Native app automating social posting via the Meta Graph API and bulk
-          messaging via the Telegram Bot API, with credential management and operation logging.
-        </p>
-        <div class="project-stack">
-          <span>React Native</span><span>TypeScript</span><span>Meta Graph API</span><span>Telegram API</span>
+        <p class="pcard-desc">AI-powered legal contract review application. Fine-tuned RoBERTa (CUAD) extracts and highlights key contractual clauses from uploaded PDFs with OCR support.</p>
+        <a class="pcard-pub" href="https://aclanthology.org/2022.lateraisse-1.6/" target="_blank" rel="noopener">📄 ACL 2022</a>
+        <div class="pcard-stack">
+          <span>Django</span><span>PyTorch</span><span>RoBERTa</span><span>Hugging Face</span><span>OCR</span>
         </div>
       </div>
 
-      <div class="project-card reveal">
-        <div class="project-row1">
-          <div class="project-name">fastapi-beyond-crud</div>
-          <div class="project-meta">personal · ongoing</div>
+      <div class="pcard reveal">
+        <div class="pcard-header">
+          <div class="pcard-name">Water Level Forecasting (STA-LSTM)</div>
+          <a class="pcard-link" href="https://github.com/sanaullahaq/Water-Level-Forecasting-Using-Spatiotemporal-Attention-Based-Long-Short-Term-Memory-Network" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
-        <p class="project-desc">
-          A deep-dive FastAPI project: async SQLAlchemy/asyncpg, Pydantic v2, JWT auth
-          with a Redis-backed token blocklist, and Celery task queues bridged with asgiref.
-        </p>
-        <div class="project-stack">
+        <p class="pcard-desc">Spatiotemporal attention-based LSTM for water level forecasting. Compares LSTM, SA-LSTM, TA-LSTM, STA-LSTM, ANN, and ARIMA on historical data.</p>
+        <a class="pcard-pub" href="https://www.mdpi.com/2073-4441/14/4/612" target="_blank" rel="noopener">📄 MDPI Water</a>
+        <div class="pcard-stack">
+          <span>PyTorch</span><span>LSTM</span><span>Attention</span><span>ARIMA</span><span>Jupyter</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="project-section-label">Side Projects</div>
+    <div class="project-grid">
+
+      <div class="pcard reveal">
+        <div class="pcard-header">
+          <div class="pcard-name">Random Password Generator</div>
+          <a class="pcard-link" href="https://github.com/sanaullahaq/random-password-generator" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+        <p class="pcard-desc">Django web app that generates customizable passwords with adjustable length, character sets, and custom character placement.</p>
+        <div class="pcard-stack">
+          <span>Django</span><span>Bootstrap</span><span>Python</span>
+        </div>
+      </div>
+
+      <div class="pcard reveal">
+        <div class="pcard-header">
+          <div class="pcard-name">Personal Portfolio (Django)</div>
+          <a class="pcard-link" href="https://github.com/sanaullahaq/personal_portfolio" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+        <p class="pcard-desc">Django-based portfolio site with a blog section showcasing projects and articles. Deployed on Heroku with Gunicorn and WhiteNoise.</p>
+        <div class="pcard-stack">
+          <span>Django</span><span>SQLite</span><span>Gunicorn</span><span>Heroku</span>
+        </div>
+      </div>
+
+      <div class="pcard reveal">
+        <div class="pcard-header">
+          <div class="pcard-name">Todo Woo</div>
+          <a class="pcard-link" href="https://github.com/sanaullahaq/todo" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+        <p class="pcard-desc">Django todo list web app with user authentication, CRUD operations, importance flags, and completion tracking with a Bootstrap UI.</p>
+        <div class="pcard-stack">
+          <span>Django</span><span>Bootstrap</span><span>jQuery</span><span>SQLite</span>
+        </div>
+      </div>
+
+      <div class="pcard reveal">
+        <div class="pcard-header">
+          <div class="pcard-name">Todo Woo REST API</div>
+          <a class="pcard-link" href="https://github.com/sanaullahaq/todo-API" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+        <p class="pcard-desc">Full-stack todo app with Django template UI and DRF REST API with token authentication. Complete API for todo management.</p>
+        <div class="pcard-stack">
+          <span>Django</span><span>DRF</span><span>Token Auth</span><span>Bootstrap</span>
+        </div>
+      </div>
+
+      <div class="pcard reveal">
+        <div class="pcard-header">
+          <div class="pcard-name">Zappit</div>
+          <a class="pcard-link" href="https://github.com/sanaullahaq/zappit" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+        <p class="pcard-desc">Reddit/Hacker News–style link aggregation API built with DRF. Create, upvote, and manage posts with authentication.</p>
+        <div class="pcard-stack">
+          <span>Django</span><span>DRF</span><span>Python</span><span>SQLite</span>
+        </div>
+      </div>
+
+      <div class="pcard reveal">
+        <div class="pcard-header">
+          <div class="pcard-name">eKYC</div>
+          <a class="pcard-link" href="https://github.com/sanaullahaq/eKYC" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+        <p class="pcard-desc">Electronic Know Your Customer system with face detection (MTCNN), face recognition (ArcFace), and OCR for identity verification via field-level access-controlled REST API.</p>
+        <div class="pcard-stack">
+          <span>Django</span><span>DRF</span><span>ArcFace</span><span>MTCNN</span><span>OpenCV</span><span>ONNX</span>
+        </div>
+      </div>
+
+      <div class="pcard reveal">
+        <div class="pcard-header">
+          <div class="pcard-name">FastAPI Comprehensive Course</div>
+          <a class="pcard-link" href="https://github.com/sanaullahaq/fastapi-comprehensive-course" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+        <p class="pcard-desc">Social media/blog API built with FastAPI. JWT auth, SQLAlchemy, Alembic migrations, PostgreSQL, Docker, CI/CD, and production deployment guides.</p>
+        <div class="pcard-stack">
+          <span>FastAPI</span><span>PostgreSQL</span><span>SQLAlchemy</span><span>Docker</span><span>CI/CD</span>
+        </div>
+      </div>
+
+      <div class="pcard reveal">
+        <div class="pcard-header">
+          <div class="pcard-name">FastAPI Beyond CRUD</div>
+          <a class="pcard-link" href="https://github.com/sanaullahaq/fastapi-beyond-crud" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+        <p class="pcard-desc">Book review API with JWT refresh tokens, Celery background tasks, Redis rate limiting, and a comprehensive 104-test suite.</p>
+        <div class="pcard-stack">
           <span>FastAPI</span><span>PostgreSQL</span><span>Redis</span><span>Celery</span><span>Pydantic v2</span>
         </div>
       </div>
@@ -428,12 +509,14 @@
 
 </main>
 
-<footer class="site-footer">
-  <div class="wrap footer-inner">
-    <span class="footer-status"><span class="dot"></span> Available — Dhaka, BD (UTC+6)</span>
-    <span>© <span id="year"></span> Sanaulla Haq</span>
-  </div>
-</footer>
+<div class="footer-bg">
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span class="footer-status"><span class="dot"></span> Available — Dhaka, BD (UTC+6)</span>
+      <span>© <span id="year"></span> Sanaulla Haq</span>
+    </div>
+  </footer>
+</div>
 
 <button id="toTop" aria-label="Back to top">↑</button>
 
