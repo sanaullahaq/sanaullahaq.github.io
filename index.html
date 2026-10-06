@@ -103,7 +103,6 @@
         <div class="eyebrow">about</div>
         <h2 class="section-title">A bit about my work</h2>
       </div>
-      <div class="section-index">GET /about → 200 OK</div>
     </div>
 
     <div class="about-grid">
@@ -145,7 +144,6 @@
         <div class="eyebrow">experience</div>
         <h2 class="section-title">Where I've worked</h2>
       </div>
-      <div class="section-index">GET /experience → 200 OK</div>
     </div>
 
     <div class="exp-context">
@@ -190,7 +188,7 @@
         </div>
       </div>
 
-      <div class="exp-card reveal">
+      <div class="exp-card exp-card--featured reveal">
         <div class="exp-card-header">
           <div class="exp-card-title">HPM <span class="exp-card-sub">— Hire Purchase Management</span></div>
           <div class="exp-card-date">Aug 2024 — Nov 2025</div>
@@ -249,7 +247,6 @@
         <div class="eyebrow">projects</div>
         <h2 class="section-title">Academic &amp; side projects</h2>
       </div>
-      <div class="section-index">GET /projects → 200 OK</div>
     </div>
 
     <div class="project-section-label">Side Projects</div>
@@ -453,54 +450,29 @@
         <div class="eyebrow">publications</div>
         <h2 class="section-title">Peer-reviewed work</h2>
       </div>
-      <div class="section-index">GET /publications → 200 OK</div>
     </div>
 
-    <div class="project-grid">
+    <div class="pub-list">
 
-      <div class="pcard reveal">
-        <div class="pcard-header">
-          <div class="pcard-name">Water Level Forecasting Using Spatiotemporal Attention-Based LSTM</div>
-        </div>
-        <p class="pcard-desc">Spatiotemporal attention-based LSTM for water level forecasting, benchmarked against LSTM, SA-LSTM, TA-LSTM, ANN and ARIMA on historical data.</p>
-        <a class="pcard-pub" href="https://www.mdpi.com/2073-4441/14/4/612" target="_blank" rel="noopener">📄 Water (MDPI), 2022</a>
-        <div class="pcard-stack">
-          <span>Deep Learning</span><span>Time Series</span><span>Attention</span><span>LSTM</span>
-        </div>
-      </div>
+      <a class="pub-row reveal" href="https://www.mdpi.com/2073-4441/14/4/612" target="_blank" rel="noopener">
+        <span class="pub-title">Water Level Forecasting Using Spatiotemporal Attention-Based LSTM</span>
+        <span class="pub-venue">Water (MDPI), 2022 ↗</span>
+      </a>
 
-      <div class="pcard reveal">
-        <div class="pcard-header">
-          <div class="pcard-name">IoT Based Air Pollution Monitoring &amp; Prediction System</div>
-        </div>
-        <p class="pcard-desc">End-to-end IoT system for real-time air quality monitoring and ARIMA-based pollutant forecasting with an Arduino sensor node and ThingSpeak cloud.</p>
-        <a class="pcard-pub" href="https://ieeexplore.ieee.org/document/9775871" target="_blank" rel="noopener">📄 IEEE, 2022</a>
-        <div class="pcard-stack">
-          <span>IoT</span><span>ARIMA</span><span>Python</span>
-        </div>
-      </div>
+      <a class="pub-row reveal" href="https://ieeexplore.ieee.org/document/9775871" target="_blank" rel="noopener">
+        <span class="pub-title">IoT Based Air Pollution Monitoring &amp; Prediction System</span>
+        <span class="pub-venue">IEEE, 2022 ↗</span>
+      </a>
 
-      <div class="pcard reveal">
-        <div class="pcard-header">
-          <div class="pcard-name">An Open Source Contractual Language Understanding Application Using Machine Learning</div>
-        </div>
-        <p class="pcard-desc">AI-powered legal contract review — fine-tuned RoBERTa (CUAD) used to extract and highlight key contractual clauses from contracts.</p>
-        <a class="pcard-pub" href="https://aclanthology.org/2022.lateraisse-1.6/" target="_blank" rel="noopener">📄 ACL LaTeRaisse, 2022</a>
-        <div class="pcard-stack">
-          <span>NLP</span><span>RoBERTa</span><span>Transformers</span>
-        </div>
-      </div>
+      <a class="pub-row reveal" href="https://aclanthology.org/2022.lateraisse-1.6/" target="_blank" rel="noopener">
+        <span class="pub-title">An Open Source Contractual Language Understanding Application Using Machine Learning</span>
+        <span class="pub-venue">ACL LaTeRaisse, 2022 ↗</span>
+      </a>
 
-      <div class="pcard reveal">
-        <div class="pcard-header">
-          <div class="pcard-name">Comparing CORAL Loss with Cross-Entropy Loss for Age Estimation on AgeDB</div>
-        </div>
-        <p class="pcard-desc">Comparative study of ordinal regression vs standard classification for facial age estimation on AgeDB using ResNet34.</p>
-        <a class="pcard-pub" href="https://github.com/sanaullahaq/Age-Estimation-using-AgeDB/blob/main/Comparing_CORAL_Loss_with_Cross_Entropy_Loss_for_Age_Estimation_on_AgeDB.pdf" target="_blank" rel="noopener">📄 Course Paper (PDF)</a>
-        <div class="pcard-stack">
-          <span>Computer Vision</span><span>PyTorch</span><span>ResNet34</span>
-        </div>
-      </div>
+      <a class="pub-row reveal" href="https://github.com/sanaullahaq/Age-Estimation-using-AgeDB/blob/main/Comparing_CORAL_Loss_with_Cross_Entropy_Loss_for_Age_Estimation_on_AgeDB.pdf" target="_blank" rel="noopener">
+        <span class="pub-title">Comparing CORAL Loss with Cross-Entropy Loss for Age Estimation on AgeDB</span>
+        <span class="pub-venue">Course Paper (PDF) ↗</span>
+      </a>
 
     </div>
 
@@ -519,7 +491,6 @@
         <div class="eyebrow">certificates</div>
         <h2 class="section-title">Certifications</h2>
       </div>
-      <div class="section-index">GET /certificates → 200 OK</div>
     </div>
 
     <div class="project-grid">
@@ -550,7 +521,6 @@
         <div class="eyebrow">skills</div>
         <h2 class="section-title">Tools I work with</h2>
       </div>
-      <div class="section-index">GET /skills → 200 OK</div>
     </div>
 
     <div class="skills-groups">
@@ -600,7 +570,6 @@
         <div class="eyebrow">contact</div>
         <h2 class="section-title">Let's work together</h2>
       </div>
-      <div class="section-index">POST /contact → 202 Accepted</div>
     </div>
 
     <p style="color: var(--ink-soft); max-width: 56ch; margin: 0 0 28px;">
