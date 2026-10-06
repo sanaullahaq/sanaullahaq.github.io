@@ -436,6 +436,15 @@ h2.section-title {
   border-radius: 100px;
 }
 
+.pub-stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 32px 0 4px;
+}
+
 /* ===========================================================
    Experience — card grid
    =========================================================== */
