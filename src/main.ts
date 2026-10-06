@@ -91,11 +91,29 @@
     toggle();
   }
 
+  /** Toggle dark/light theme and persist the choice. */
+  function initThemeToggle(): void {
+    const btn = document.getElementById("themeToggle");
+    if (!btn) return;
+
+    btn.addEventListener("click", () => {
+      const root = document.documentElement;
+      const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      try {
+        localStorage.setItem("theme", next);
+      } catch {
+        /* storage unavailable (e.g. private mode) — session-only theme */
+      }
+    });
+  }
+
   function init(): void {
     setYear();
     initScrollReveal();
     initActiveRoute();
     initBackToTop();
+    initThemeToggle();
   }
 
   if (document.readyState === "loading") {

@@ -11,8 +11,12 @@
   --accent: #0f766e;
   --accent-strong: #0b5a54;
   --accent-tint: #e3f1ef;
+  --accent-tint-hover: #cde3dd;
   --rule: #e4e7ec;
   --rule-strong: #c6cfd8;
+  --header-bg: rgba(247, 248, 250, 0.88);
+  --code-bg: #14181d;
+  --code-ink: #e9e6dc;
 
   --font-display: "Fraunces", "Iowan Old Style", serif;
   --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -22,6 +26,49 @@
   --radius: 8px;
   --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.05);
   --shadow-md: 0 6px 16px rgba(16, 24, 40, 0.08);
+}
+
+/* Dark theme — manual toggle (data-theme="dark") or system preference (no explicit light choice) */
+[data-theme="dark"] {
+  --bg: #0d1117;
+  --surface: #151b23;
+  --surface-2: #1b2330;
+  --ink: #e6edf3;
+  --ink-soft: #9aa7b4;
+  --ink-faint: #6b7885;
+  --accent: #2dd4bf;
+  --accent-strong: #5eead4;
+  --accent-tint: #12312e;
+  --accent-tint-hover: #1a4a44;
+  --rule: #2a3340;
+  --rule-strong: #3d4a5a;
+  --header-bg: rgba(13, 17, 23, 0.85);
+  --code-bg: #080b10;
+  --code-ink: #e6edf3;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.6);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d1117;
+    --surface: #151b23;
+    --surface-2: #1b2330;
+    --ink: #e6edf3;
+    --ink-soft: #9aa7b4;
+    --ink-faint: #6b7885;
+    --accent: #2dd4bf;
+    --accent-strong: #5eead4;
+    --accent-tint: #12312e;
+    --accent-tint-hover: #1a4a44;
+    --rule: #2a3340;
+    --rule-strong: #3d4a5a;
+    --header-bg: rgba(13, 17, 23, 0.85);
+    --code-bg: #080b10;
+    --code-ink: #e6edf3;
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.5);
+    --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.6);
+  }
 }
 
 * { box-sizing: border-box; }
@@ -90,7 +137,7 @@ header.site-header {
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(250, 249, 246, 0.88);
+  background: var(--header-bg);
   backdrop-filter: saturate(140%) blur(6px);
   border-bottom: 1px solid var(--rule);
 }
@@ -151,6 +198,37 @@ nav.routes a[aria-current="page"]::after {
   border-radius: 1px;
   margin-top: 2px;
 }
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border: 1px solid var(--rule-strong);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent-strong);
+}
+
+.theme-toggle .icon-sun { display: none; }
+
+[data-theme="dark"] .theme-toggle .icon-sun { display: inline-flex; }
+[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 
 /* ===========================================================
    Hero
@@ -266,8 +344,8 @@ h1.hero-title em {
 .hero-cli {
   font-family: var(--font-mono);
   font-size: 13.5px;
-  background: var(--ink);
-  color: #e9e6dc;
+  background: var(--code-bg);
+  color: var(--code-ink);
   border-radius: var(--radius);
   padding: 16px 18px;
   max-width: 560px;
@@ -661,7 +739,7 @@ h2.section-title {
 }
 
 .pcard-pub:hover {
-  background: #cde3dd;
+  background: var(--accent-tint-hover);
 }
 
 .pcard-stack {
@@ -878,8 +956,13 @@ footer.site-footer {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    width: 100%;
+    flex: 1;
   }
   nav.routes::-webkit-scrollbar { display: none; }
+  .nav-right {
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+  }
   .nav-inner { flex-direction: column; align-items: flex-start; gap: 12px; }
 }

@@ -64,11 +64,27 @@
         });
         toggle();
     }
+    function initThemeToggle() {
+        const btn = document.getElementById("themeToggle");
+        if (!btn)
+            return;
+        btn.addEventListener("click", () => {
+            const root = document.documentElement;
+            const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+            root.setAttribute("data-theme", next);
+            try {
+                localStorage.setItem("theme", next);
+            }
+            catch (_a) {
+            }
+        });
+    }
     function init() {
         setYear();
         initScrollReveal();
         initActiveRoute();
         initBackToTop();
+        initThemeToggle();
     }
     if (document.readyState === "loading") {
         document.addEventListener("DOMContentLoaded", init);
