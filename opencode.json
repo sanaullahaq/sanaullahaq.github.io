@@ -5,5 +5,12 @@
       "git push": "ask",
       "git commit": "ask"
     }
+  },
+  "mcp": {
+    "upwork": {
+      "type": "remote",
+      "url": "https://mcp.upwork.com/mcp",
+      "oauth": {}
+    }
   }
 }
